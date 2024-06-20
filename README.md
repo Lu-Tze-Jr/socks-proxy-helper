@@ -1,12 +1,12 @@
-# socks-proxy
+# socks-proxy-helper
 
 ## Opening SOCKS proxies quickly
 
-When accessing web-based tools on servers that only allow ssh access, using SOCKS proxies and connecting a local browser to those are usually more efficient than doing X forwarding over ssh, especially when multiple ssh hops are necessary to reach the servers. As just locking your screen can have the adverse affect of killing your proxies, at least if you're working over some VPNs, it can still become annoying - hence the need to (re)open SOCKS proxies in a quick and easy manner.
+When accessing web-based tools on servers that only allow ssh access, using SOCKS proxies and connecting a local browser to those are usually more efficient than doing X forwarding over ssh, especially when multiple ssh hops are necessary to reach the servers. As just locking your screen can have the adverse affect of killing your proxies, at least if you're working over some VPNs, it can still become annoying - hence the need to (re)open SOCKS proxies in a quick and easy manner. This repository offers a few bash scripts that allows exactly this.
 
 ## Defining SOCKS proxies
 
-In a Linux/Unix-like environment, this is most easily done in your private ssh configuration file, `~/.ssh/config`. An example entry with a two-level jump:
+In a Unix-like environment (Linux, MacOS...), this is most easily done in your private ssh configuration file, `~/.ssh/config`. An example entry with a two-level jump:
 
 ```ssh
 Host socks-target
