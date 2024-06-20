@@ -22,15 +22,13 @@ If you have keybased access properly setup and are using a key agent, this shoul
 
 I've chosen to define my handful of SOCKS proxies all using the same portnumber, which has the drawback of only allowing one active proxy at a time. But as the scripts provided here helps you opening a SOCKS proxy really fast, swapping between them isn't really an issue anymore. And it makes the browser configuration simpler as well.
 
-## Working with a dedicated browser for SOCKS access
-
-I've ended up using FireFox for accessing web resources via SOCKS, as it has a clean and simple setup for proxy use. Once configured for using my preferred port, it's done. Swapping proxies under FireFox's nose is something the browser is ignorant about, it will happily connect via whatever is connected on the configured SOCKS port.
+I've ended up using FireFox as a dedicated browser for accessing web resources via SOCKS, as it has a clean and simple setup for proxy use. Once configured for using my preferred port, it's done. Swapping proxies under FireFox's nose is something the browser is ignorant about, it will happily connect via whatever is at the other end of the configured SOCKS port.
 
 ## The scripts
 
 ### find-socks-proxies.sh
 
-A short bash script, using **awk** and some filters to list the host names of any SOCKS proxies you have defined locally.
+A short bash script, using `awk` and some filters to list the host names of any SOCKS proxies you have defined locally.
 
 ### socks-proxy.sh
 
@@ -50,6 +48,4 @@ Options:
 
 ### completion-socks-proxy.bash
 
-As a bonus, there's a completion script for bash - this completes options/flags as well as proxy hosts. This should be sourced before you try executing the main script, preferably in your bash login setup.
-
-
+As a bonus, there's a completion script for bash - this completes options/flags as well as proxy hosts. This should be sourced before you try executing the main script, preferably in your bash login setup. Especially useful if you have a bunch of different hosts/proxies defined.
