@@ -49,3 +49,7 @@ Options:
 ### completion-socks-proxy.bash
 
 As a bonus, there's a completion script for bash - this completes options/flags as well as proxy hosts. This should be sourced before you try executing the main script, preferably in your bash login setup. Especially useful if you have a bunch of different hosts/proxies defined.
+
+## Installation
+
+Move `find-socks-proxies.sh` and `socks-proxy.sh` into your $PATH, and put `completion-socks-proxy.bash` where it will be automatically sourced upon login.
